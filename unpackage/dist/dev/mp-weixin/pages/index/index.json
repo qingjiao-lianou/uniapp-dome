@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "黑马优购",
+  "usingComponents": {
+    "seach-input": "/components/searchInput"
+  }
+}
