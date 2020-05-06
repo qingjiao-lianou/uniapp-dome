@@ -1,0 +1,35 @@
+.home swiper {
+  height: 340rpx;
+}
+.home .tabs {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  padding: 10rpx 0;
+}
+.home .tabs .tabs_item {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+}
+.home .tabs .tabs_item image {
+  width: 80%;
+}
+.home .floor .floor_item .floor_item_content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.home .floor .floor_item .floor_item_content image {
+  width: 33.3%;
+}
+.home .floor .floor_item .floor_item_content image:nth-last-child(-n + 4) {
+  height: 207.97413793rpx;
+}
+
