@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///C:/Users/Dell/Desktop/案例/黑马优购/main.js"],"names":["createPage","Page"],"mappings":";;;;;;;;;;kDAAA;AACA;AACA,2F;AACAA,UAAU,CAACC,cAAD,CAAV,C","file":"pages/user/index.js","sourcesContent":["import 'uni-pages';\nimport Vue from 'vue'\nimport Page from './pages/user/index.vue'\ncreatePage(Page)"],"sourceRoot":""}
