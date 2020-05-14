@@ -1,0 +1,13 @@
+.search .search_content.data-v-75956800 {
+  font-size: 35rpx;
+  padding: 15rpx;
+}
+.search .search_content .search_item.data-v-75956800 {
+  padding: 15rpx 10rpx;
+  border-bottom: 1rpx solid #FFFFFF;
+  background-color: #dcdedc;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+

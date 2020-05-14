@@ -1,3 +1,25 @@
+
+
+
+
+
+
+
+	/*每个页面公共css */
+page,view,text,swiper,swiper-item,navigator,image,button,input{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+image{
+  width: 100%;
+}
+page{
+  color: #666;
+  font-size: 28rpx;
+}
+
 @charset "UTF-8";
 /**
  * 这里是uni-app内置的常用样式变量
@@ -32,27 +54,5 @@
   font-family: uniicons;
   text-decoration: none;
   text-align: center;
-}
-
-
-
-
-
-
-
-
-/*每个页面公共css */
-page,view,text,swiper,swiper-item,navigator,image,button,input{
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-image{
-  width: 100%;
-}
-page{
-  color: #666;
-  font-size: 28rpx;
 }
 

@@ -1,0 +1,58 @@
+.goods_info swiper {
+  height: 520rpx;
+}
+.goods_info .goods_price {
+  font-size: 35rpx;
+  color: #dd524d;
+  font-weight: 600;
+  padding-left: 15rpx;
+}
+.goods_info .info_content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  border-bottom: 15rpx solid #C0C0C0;
+  padding: 10rpx;
+  margin: 0 10rpx;
+}
+.goods_info .info_content .info_name {
+  -webkit-box-flex: 5;
+  -webkit-flex: 5;
+          flex: 5;
+  font-size: 32rpx;
+  border-right: 1rpx solid #666666;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.goods_info .info_content .collec {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.goods_info .image_info .image_info_title {
+  font-size: 35rpx;
+  font-weight: 900;
+  color: #dd524d;
+  padding: 15rpx;
+}
+.goods_info .tab_cart {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+

@@ -1,10 +1,23 @@
 <script>
-	import uniIcons from "@/components/uni-icons/uni-icons.vue"
+	
 	export default {
 	}
 </script>
 
 <style>
 	/*每个页面公共css */
-	@import url("@/static/style/style.css");
+page,view,text,swiper,swiper-item,navigator,image,button,input{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+image{
+  width: 100%;
+}
+page{
+  color: #666;
+  font-size: 28rpx;
+
+}
 </style>

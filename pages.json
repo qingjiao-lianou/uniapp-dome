@@ -23,6 +23,37 @@
 			"style": {
 				"navigationBarTitleText": "我的"
 			}
+		},
+		{
+			"path": "pages/goodsList/goodsList",
+			"style": {
+				"navigationBarTitleText": "商品列表",
+				"enablePullDownRefresh": true  
+			}
+		},
+		{
+			"path": "pages/goodsInfo/goodsInfo",
+			"style": {
+				"navigationBarTitleText": "商品详情"
+			}
+		},
+		{
+			"path": "pages/pay/pay",
+			"style": {
+				"navigationBarTitleText": "支付"
+			}
+		},
+		{
+			"path": "pages/search/search",
+			"style": {
+				"navigationBarTitleText": "搜索"
+			}
+		},
+		{
+			"path": "pages/auth/auth",
+			"style": {
+				"navigationBarTitleText": "授权页面"
+			}
 		}
 	],
 	"globalStyle": {

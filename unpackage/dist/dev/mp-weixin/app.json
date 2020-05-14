@@ -3,7 +3,12 @@
     "pages/index/index",
     "pages/category/category",
     "pages/cart/cart",
-    "pages/user/user"
+    "pages/user/user",
+    "pages/goodsList/goodsList",
+    "pages/goodsInfo/goodsInfo",
+    "pages/pay/pay",
+    "pages/search/search",
+    "pages/auth/auth"
   ],
   "subPackages": [],
   "window": {
@@ -41,5 +46,6 @@
       }
     ]
   },
-  "usingComponents": {}
+  "usingComponents": {},
+  "sitemapLocation": "sitemap18.json"
 }

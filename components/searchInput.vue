@@ -1,6 +1,6 @@
 <template>
 	<view class="search">
-		<navigator class="Input">
+		<navigator url="/pages/search/search" class="Input">
 			<uni-icons type="search" size="15"></uni-icons>
 			<text>搜索</text>
 		</navigator>

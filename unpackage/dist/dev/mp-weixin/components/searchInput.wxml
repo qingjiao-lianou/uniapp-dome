@@ -1,1 +1,1 @@
-<view class="search"><navigator class="Input"><uni-icons vue-id="2cf01fcf-1" type="search" size="15" bind:__l="__l"></uni-icons><text>搜索</text></navigator></view>
+<view class="search"><navigator class="Input" url="/pages/search/search"><uni-icons vue-id="2cf01fcf-1" type="search" size="15" bind:__l="__l"></uni-icons><text>搜索</text></navigator></view>

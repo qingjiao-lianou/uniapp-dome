@@ -20,7 +20,9 @@
 					<image :src="item.floor_title.image_src" mode="widthFix"></image>
 				</view>
 				<view class="floor_item_content">
-					<image v-for="(item2,index2) in item.product_list" :key="index2" :src="item2.image_src" mode="{index2 === 0 ? 'widthFix':'scaleToFill'}"></image>
+					<view class="floor_img" v-for="(item2,index2) in item.product_list" :key="index2">
+						<image :src="item2.image_src" :mode="[index2 === 0?'aspectFill':'widthFix']"></image>
+					</view>
 				</view>
 			</view>
 		</view>
@@ -44,34 +46,28 @@
 		},
 		methods: {
 			// 获取轮播图
-			getData() {
-				uni.request({
-					url: "https://api-hmugo-web.itheima.net/api/public/v1/home/swiperdata",
-					success: res => {
-						// console.log(res)
-						this.swiperList = res.data.message
-					}
+			async getData() {
+				const res = await this.$request({
+					url: "/v1/home/swiperdata"
 				})
+
+
+
+				this.swiperList = res
 			},
 			// 获取导航
-			getTab() {
-				uni.request({
-					url: "https://api-hmugo-web.itheima.net/api/public/v1/home/catitems",
-					success: res => {
-						// console.log(res)
-						this.tabList = res.data.message
-					}
+			async getTab() {
+				const res = await this.$request({
+					url: "/v1/home/catitems"
 				})
+				this.tabList = res
 			},
 			// 获取楼层
-			getFloorList() {
-				uni.request({
-					url: "https://api-hmugo-web.itheima.net/api/public/v1/home/floordata",
-					success: (res) => {
-						console.log(res)
-						this.floorList = res.data.message
-					}
+			async getFloorList() {
+				const res = await this.$request({
+					url: '/v1/home/floordata'
 				})
+				this.floorList = res
 			}
 
 		},
@@ -109,15 +105,26 @@
 				}
 
 				.floor_item_content {
-					display: flex;
+					overflow: hidden;
 
-					image {
-
-						width: 33.3%;
+					.floor_img {
+						box-sizing: border-box;
+						float: left;
+						width: 33.3333%;
+						border-left: 5rpx solid #fff;
+						border-right: 5rpx solid #fff;
 					}
 
-					image:nth-last-child(-n + 4) {
+					view:nth-last-child(-n+4) {
 						height: 750rpx / 3 * 386 / 232 / 2;
+
+						image {
+							height: 100%;
+						}
+					}
+
+					view:nth-last-child(-n+2) {
+						border-top: 5px solid #fff;
 					}
 				}
 			}
